@@ -1,0 +1,21 @@
+apiVersion:reverseproxy/v1
+kind: Deployment
+metadata:
+  name:reverseproxy
+  labels:
+    app:reverseproxy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app:reverseproxy
+  template:
+    metadata:
+      labels:
+        app:reverseproxy
+    spec:
+      containers:
+      - name:reverseproxy
+        image: abdi123/reverseproxy
+        ports:
+        - containerPort: 80
