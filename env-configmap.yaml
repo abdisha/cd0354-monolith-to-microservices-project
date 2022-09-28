@@ -1,8 +1,7 @@
-
- POSTGRES_HOST=postgres.cjssgu8ltfo7.us-east-1.rds.amazonaws.com
- POSTGRES_DB=postgres
- AWS_BUCKET=mono-to-micro
- AWS_REGION=us-east-1
- AWS_PROFILE=udacity_super_user
- JWT_SECRET=testing
- URL=http://localhost:8100
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-secret
+data:
+  POSTGRES_HOST: postgres.cjssgu8ltfo7.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
