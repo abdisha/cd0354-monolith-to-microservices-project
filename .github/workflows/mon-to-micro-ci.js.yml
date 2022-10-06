@@ -29,7 +29,6 @@ jobs:
       with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - run: docker login -u username -p password  --password-stdin
     - run: docker tag udagram-api-feed abdi123/udagram-api-feed:v2 
     - run: docker tag udagram-api-user abdi123/udagram-api-user:v2
     - run: docker tag udagram-frontend abdi123/udagram-frontend:v2    
