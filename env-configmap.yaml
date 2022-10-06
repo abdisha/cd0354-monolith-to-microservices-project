@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: env-secret
 data:
-  POSTGRES_HOST: postgres.cjssgu8ltfo7.us-east-1.rds.amazonaws.com
-  POSTGRES_DB: postgres
+  POSTGRES_HOST: postgresdb.cjssgu8ltfo7.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgresdb
