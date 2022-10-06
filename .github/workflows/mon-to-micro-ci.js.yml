@@ -24,9 +24,7 @@ jobs:
     - run: docker build -t udagram-api-feed ./udagram-api-feed
     - run: docker build -t udagram-api-user ./udagram-api-user
     - run: docker build -t udagram-frontend ./udagram-frontend
-    - run: docker build -t reverseproxy ./udagram-reverseproxy
-    
-    
+    - run: docker build -t reverseproxy ./udagram-reverseproxy 
     - name: Login to Docker Hub
     - uses: docker/login-action@v2
     - run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD}}  --password-stdin
