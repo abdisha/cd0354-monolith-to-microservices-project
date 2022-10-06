@@ -28,7 +28,7 @@ jobs:
     
     - uses: docker/login-action@v2
     - name: Login to Docker Hub
-      run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD}}  --password-stdin
+    - run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD}}  --password-stdin
     - name: taging docker images
     - run: docker tag udagram-api-feed abdi123/udagram-api-feed:v2 
     - run: docker tag udagram-api-user abdi123/udagram-api-user:v2
