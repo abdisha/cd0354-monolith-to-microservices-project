@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-secret
+data:
+  POSTGRES_HOST: udagram-db.c5wrbaluahuc.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: udagram-db
+  AWS_BUCKET: mono-to-micro-bucket-abdi
+  AWS_REGION: us-east-1c
+  AWS_PROFILE: udacity_super_user
+  JWT_SECRET: testing
+  URL: http://localhost:8100
