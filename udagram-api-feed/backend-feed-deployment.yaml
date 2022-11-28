@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: udagram-api-feed
-        image: abdi123/udagram-api-feed:v1
+        image: abdi123/udagram-api-feed:v5
         ports:
         - containerPort: 80
