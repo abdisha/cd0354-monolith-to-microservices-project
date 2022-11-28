@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: abdi123/reverseproxy:v5
+        image: abdi123/reverseproxy:v6
         ports:
-        - containerPort: 80
+        - containerPort: 8080
