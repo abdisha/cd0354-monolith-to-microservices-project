@@ -25,5 +25,4 @@ spec:
                 name: env-configmap
         - secretRef:
                 name: env-secret
-        - secretRef:
-                name: aws-secret
+        
