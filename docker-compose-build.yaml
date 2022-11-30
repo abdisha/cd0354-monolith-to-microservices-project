@@ -11,7 +11,7 @@ services:
   backend_feed:
     build:
       context: ./udagram-api-feed
-    image: udagram-api-feed:v7
+    image: udagram-api-feed:v8
   frontend:
     build:
       context: ./udagram-frontend
