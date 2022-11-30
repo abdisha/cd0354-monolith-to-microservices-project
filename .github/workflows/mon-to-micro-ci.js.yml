@@ -31,9 +31,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
     - run: docker tag udagram-api-feed abdi123/udagram-api-feed:v8
     - run: docker tag udagram-api-user abdi123/udagram-api-user:v7
-    - run: docker tag udagram-frontend abdi123/udagram-frontend:v12  
+    - run: docker tag udagram-frontend abdi123/udagram-frontend:v13  
     - run: docker tag reverseproxy abdi123/reverseproxy:v9   
     - run: docker push abdi123/udagram-api-feed:v8 
     - run: docker push abdi123/udagram-api-user:v7 
-    - run: docker push abdi123/udagram-frontend:v12
+    - run: docker push abdi123/udagram-frontend:v13
     - run: docker push abdi123/reverseproxy:v9   
